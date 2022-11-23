@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="icon" href="./src/assets/g-genesis3.png">
+    <script defer src="./src/scripts/data.js"></script>
+    <script defer src="./src/scripts/index.js"></script>
+    <title>Gênesis</title>
+  </head>
+  <body>
+    <header>
+      <h1><img src="./src/assets/g6.png" width="360" height="270" alt="Gênesis"></h1>
+      <div>
+        <form class="campoDePesquisa">
+          <input type="text" id="barraDePesquisa" placeholder="Busca">
+          <a href="#"><img class="iconeDePesquisa" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+        </form> 
+      </div>
+      <div>
+        <a class="btnLogar" href="login.html">Logar/Cadastre-se</a>
+      </div>       
+    </header>
+    <main>
+      <div class="menuCategoria">
+        <div class="ladoEsquerdo">
+          <ul>
+            <li id="btnPlataforma">Plataforma</li>
+            <li id="btnTerror">Terror</li>
+            <li id="btnAventura">Aventura</li>
+            <li id="btnSimulacao">Simulação</li>
+            <li id="btnRpg">Rpg</li>
+            <li id="btnMetroidvania">Metroidvania</li>
+            <li id="btnRogueLike">Rogue Like</li>
+            <li id="btnTodos">Todos</li>
+          </ul>
+          
+          <button class="btnModal" id="abrirModal">Faça seu anúncio</button>
+        </div>
+      </div>
+
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modalHeader">
+          <h2>Como nos mandar um jogo</h2>
+          <button id="fecharModal">Fechar</button>
+        </div>
+        <div class="modalBody">
+          <p>A Gênesis trabalha com suporte por e-mail, para delimitar os anúncios e computalos no servidor e enviados para o proprio site
+            
+            <img class="modeloEmail" src="./src/assets/modeloEmail.png">
+
+            <p>O requerimento (obrigatorio) para nos enviar as informações de seu anúncio para seu jogo deve 
+            conter o link para a pagina de download original do jogo, o nome que o dev quer que seja exibido na timeline, 
+            e a principal categoria de seu jogo, e o mais imprtante que é a imagem do card do seu jogo.</p>
+            
+            <p>O e-mail de contato da Gênesis: "contato.genesis10@gmail.com"</p>
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="containerJogos">
+        <section id="Plataforma">
+          <h2>Plataforma</h2>
+          <div class="menuJogos">
+            <ul id="listaPlataforma">
+              <li>
+                <figure>
+                  <img src="./src/assets/walkieTalkie.png" alt="imagem do jogo" />
+                </figure>
+                <p>Walkie Talkie</p>
+                <a
+                  href="https://managore.itch.io/walkie-talkie"
+                  target="_blank"
+                  >Baixar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Terror">
+          <h2>Terror</h2>
+          <div class="menuJogos">
+            <ul id="listaTerror"></ul>
+          </div>
+        </section>
+
+       <section id="Aventura"> 
+        <h2>Aventura</h2>
+        <div class="menuJogos">
+          <ul id="listaAventura"></ul>
+        </div>
+       </section>
+
+        <section id="Simulação">
+            <h2>Simulação</h2>
+        <div class="menuJogos">
+          <ul id="listaSimulacao"></ul>
+        </div>
+        </section>
+
+        <section id="Rpg">
+            <h2>Rpg</h2>
+        <div class="menuJogos">
+          <ul id="listaRpg"></ul>
+        </div>
+        </section>
+
+        <section id="Metroidvania">
+            <h2>Metroidvania</h2>
+        <div class="menuJogos">
+          <ul id="listaMetroidvania"></ul>
+        </div>
+        </section>
+
+        <section id="Rogue Like">
+            <h2>Rogue Like</h2>
+        <div class="menuJogos">
+          <ul id="listaRogueLike"></ul>
+        </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
